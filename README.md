@@ -1,4 +1,4 @@
-# rts001plan
+# rts001
 Welp I'm back with another pathetic attempt at creating a game... hopefully I can create something moderately good before the end of the school year
 
 ## Summary
