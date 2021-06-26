@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-26T01:05:25.671Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 OPR/77.0.4054.90" etag="j6F1VYfr6KwLalUXF92y" version="14.7.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-06-26T01:12:44.200Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36 OPR/77.0.4054.90" etag="JVQ0IVaxEMGnZQdKZ12B" version="14.7.8" type="github" pages="3">
   <diagram id="kEIfM25zizZhZ6Kc5jZf" name="Structure">
     <mxGraphModel dx="1382" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -176,9 +176,6 @@
         <mxCell id="7RY1YWYiHsgG8xTm4yaZ-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="7RY1YWYiHsgG8xTm4yaZ-1" source="7RY1YWYiHsgG8xTm4yaZ-16" target="7RY1YWYiHsgG8xTm4yaZ-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="77SyVFQpc3j84GxGPSy--15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="7RY1YWYiHsgG8xTm4yaZ-1" source="7RY1YWYiHsgG8xTm4yaZ-16" target="77SyVFQpc3j84GxGPSy--14">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="7RY1YWYiHsgG8xTm4yaZ-16" value="Ingame" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
           <mxGeometry x="130" y="240" width="120" height="60" as="geometry" />
         </mxCell>
@@ -201,13 +198,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="7RY1YWYiHsgG8xTm4yaZ-22" value="Default State" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
-          <mxGeometry x="310" y="330" width="120" height="60" as="geometry" />
+          <mxGeometry x="310" y="285" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7RY1YWYiHsgG8xTm4yaZ-23" value="Ingame Menu" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
-          <mxGeometry x="310" y="240" width="120" height="60" as="geometry" />
+          <mxGeometry x="310" y="195" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7RY1YWYiHsgG8xTm4yaZ-24" value="Unit/Building Selected Sidebar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
-          <mxGeometry x="730" y="180" width="120" height="60" as="geometry" />
+          <mxGeometry x="730" y="75" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7RY1YWYiHsgG8xTm4yaZ-28" value="Menu" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
           <mxGeometry x="320" y="470" width="120" height="60" as="geometry" />
@@ -216,7 +213,7 @@
           <mxGeometry x="320" y="560" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="77SyVFQpc3j84GxGPSy--0" value="Building Selector" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
-          <mxGeometry x="520" y="390" width="120" height="60" as="geometry" />
+          <mxGeometry x="520" y="285" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="77SyVFQpc3j84GxGPSy--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="7RY1YWYiHsgG8xTm4yaZ-1" source="77SyVFQpc3j84GxGPSy--2" target="7RY1YWYiHsgG8xTm4yaZ-24">
           <mxGeometry relative="1" as="geometry" />
@@ -228,21 +225,18 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="77SyVFQpc3j84GxGPSy--2" value="Sidebars" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
-          <mxGeometry x="520" y="260" width="120" height="60" as="geometry" />
+          <mxGeometry x="520" y="155" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="77SyVFQpc3j84GxGPSy--3" value="&quot;Planning to build&quot; sidebar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
-          <mxGeometry x="730" y="260" width="120" height="60" as="geometry" />
+          <mxGeometry x="730" y="155" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="77SyVFQpc3j84GxGPSy--4" value="Default Sidebar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
-          <mxGeometry x="730" y="350" width="120" height="60" as="geometry" />
+          <mxGeometry x="730" y="245" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="77SyVFQpc3j84GxGPSy--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="7RY1YWYiHsgG8xTm4yaZ-1" source="7RY1YWYiHsgG8xTm4yaZ-22" target="77SyVFQpc3j84GxGPSy--0">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="430" y="10" as="sourcePoint" />
+            <mxPoint x="430" y="-35" as="sourcePoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="77SyVFQpc3j84GxGPSy--14" value="Player Upgrade State" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
-          <mxGeometry x="310" y="150" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
