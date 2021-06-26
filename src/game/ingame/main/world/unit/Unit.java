@@ -1,10 +1,9 @@
-package game.ingame.main.world.building;
+package game.ingame.main.world.unit;
 
 import game.ingame.main.world.GameObject;
 
-public class Building extends GameObject {
-
-    public Building(int x, int y, int w, int h) {
+public class Unit extends GameObject {
+    public Unit(int x, int y, int w, int h) {
         super(x, y, w, h);
     }
 

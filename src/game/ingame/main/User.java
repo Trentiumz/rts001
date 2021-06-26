@@ -1,4 +1,5 @@
 package game.ingame.main;
 
-public class Player {
+public class User {
+
 }
