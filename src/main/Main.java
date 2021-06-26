@@ -4,9 +4,10 @@ import processing.core.PApplet;
 
 public class Main extends PApplet {
     private static Main client = null;
+    State curState;
 
     public Main() {
-        if(client != null)
+        if (client != null)
             throw new RuntimeException("A second client was created when it should've been a singleton!");
         client = this;
     }
@@ -22,20 +23,40 @@ public class Main extends PApplet {
     }
 
     public void setup() {
+        curState = new StartingState();
+        curState.setup();
+    }
 
+    public void draw() {
+        curState.tick();
+        curState.render();
     }
 
     public void mousePressed() {
+        curState.mousePressed();
     }
 
     public void mouseReleased() {
+        curState.mouseReleased();
+    }
+
+    public void keyPressed() {
+        curState.keyPressed();
+    }
+
+    public void keyReleased() {
+        curState.keyReleased();
+    }
+
+    public void changeState(State changeTo){
+        this.curState = changeTo;
     }
 
     public static void main(String[] args) {
         PApplet.main(new String[]{"main.Main"});
     }
 
-    public static Main getClient(){
+    public static Main getClient() {
         return client;
     }
 }

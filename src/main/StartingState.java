@@ -1,13 +1,11 @@
-package mainMenu;
+package main;
 
-import main.Main;
-import main.State;
+import mainMenu.MainMenu;
 
-public class MainMenu extends State {
-
+public class StartingState extends State {
     @Override
     public void setup() {
-
+        Main.getClient().changeState(new MainMenu());
     }
 
     @Override
