@@ -1,3 +1,5 @@
+package main;
+
 import processing.core.PApplet;
 
 public class Main extends PApplet {
@@ -20,6 +22,7 @@ public class Main extends PApplet {
     }
 
     public void setup() {
+
     }
 
     public void mousePressed() {
@@ -29,6 +32,10 @@ public class Main extends PApplet {
     }
 
     public static void main(String[] args) {
-        PApplet.main(new String[]{"Main"});
+        PApplet.main(new String[]{"main.Main"});
+    }
+
+    public static Main getClient(){
+        return client;
     }
 }

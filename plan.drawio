@@ -34,13 +34,13 @@
         <mxCell id="NqMpsVKDhAfN20PhDk_8-4" value="Player Info" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="50" y="190" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="NqMpsVKDhAfN20PhDk_8-8" value="Main Menu" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NqMpsVKDhAfN20PhDk_8-8" value="main.Main Menu" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="460" y="280" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="NqMpsVKDhAfN20PhDk_8-9" value="Home" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="460" y="220" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NqMpsVKDhAfN20PhDk_8-10" value="Game" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NqMpsVKDhAfN20PhDk_8-10" value="game" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="460" y="160" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="3QHtiIeBiJ7OlSHWTBUB-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="NqMpsVKDhAfN20PhDk_8-11" target="NqMpsVKDhAfN20PhDk_8-10">
@@ -149,7 +149,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="I1zqG8G090VhmEKgnmgG" name="Game Structure">
+  <diagram id="I1zqG8G090VhmEKgnmgG" name="game Structure">
     <mxGraphModel dx="2232" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="7RY1YWYiHsgG8xTm4yaZ-0" />
@@ -164,7 +164,7 @@
             <mxPoint x="90" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7RY1YWYiHsgG8xTm4yaZ-13" value="Game States" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
+        <mxCell id="7RY1YWYiHsgG8xTm4yaZ-13" value="game States" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
           <mxGeometry x="-100" y="380" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7RY1YWYiHsgG8xTm4yaZ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="7RY1YWYiHsgG8xTm4yaZ-1" source="7RY1YWYiHsgG8xTm4yaZ-16" target="7RY1YWYiHsgG8xTm4yaZ-18">
@@ -188,7 +188,7 @@
         <mxCell id="7RY1YWYiHsgG8xTm4yaZ-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="7RY1YWYiHsgG8xTm4yaZ-1" source="7RY1YWYiHsgG8xTm4yaZ-17" target="7RY1YWYiHsgG8xTm4yaZ-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="7RY1YWYiHsgG8xTm4yaZ-17" value="Game Home" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
+        <mxCell id="7RY1YWYiHsgG8xTm4yaZ-17" value="game Home" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
           <mxGeometry x="130" y="510" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7RY1YWYiHsgG8xTm4yaZ-18" value="Player Info" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="7RY1YWYiHsgG8xTm4yaZ-1">
