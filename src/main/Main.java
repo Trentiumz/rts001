@@ -1,6 +1,7 @@
 package main;
 
 import processing.core.PApplet;
+import processing.core.PFont;
 
 public class Main extends PApplet {
     private static Main client = null;
@@ -23,6 +24,7 @@ public class Main extends PApplet {
     }
 
     public void setup() {
+        frameRate(30);
         curState = new StartingState();
         curState.setup();
     }
@@ -48,7 +50,7 @@ public class Main extends PApplet {
         curState.keyReleased();
     }
 
-    public void changeState(State changeTo){
+    public void changeState(State changeTo) {
         this.curState = changeTo;
     }
 

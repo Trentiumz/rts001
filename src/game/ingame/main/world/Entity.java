@@ -1,53 +1,55 @@
 package game.ingame.main.world;
 
-import main.Main;
-import processing.core.PImage;
 import tool.Tools;
 
 public abstract class Entity {
 
-    private int x, y, w, h;
+    private float x, y, w, h;
 
-    public Entity(int x, int y, int w, int h) {
+    public Entity(float x, float y, float w, float h) {
         this.x = x;
         this.y = y;
         this.w = w;
         this.h = h;
     }
 
-    public boolean collided(Entity other) {
+    public boolean touching(Entity other) {
         return Tools.boxCollided(x, y, w, h, other.x, other.y, other.w, other.h);
     }
 
-    public int getX() {
+    public boolean touching(float x, float y, float w, float h) {
+        return Tools.boxCollided(this.x, this.y, this.w, this.h, x, y, w, h);
+    }
+
+    public float getX() {
         return x;
     }
 
-    public int getY() {
+    public float getY() {
         return y;
     }
 
-    public int getW() {
+    public float getW() {
         return w;
     }
 
-    public int getH() {
+    public float getH() {
         return h;
     }
 
-    protected void setX(int x) {
+    protected void setX(float x) {
         this.x = x;
     }
 
-    protected void setY(int y) {
+    protected void setY(float y) {
         this.y = y;
     }
 
-    protected void setW(int w) {
+    protected void setW(float w) {
         this.w = w;
     }
 
-    protected void setH(int h) {
+    protected void setH(float h) {
         this.h = h;
     }
 }

@@ -20,4 +20,11 @@ public class Camera {
         Main.getClient().translate(-x, -y);
     }
 
+    float realX(float x){
+        return x + this.x;
+    }
+
+    float realY(float y){
+        return y + this.y;
+    }
 }
