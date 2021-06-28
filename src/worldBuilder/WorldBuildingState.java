@@ -1,11 +1,11 @@
-package main;
+package worldBuilder;
 
-import mainMenu.MainMenu;
+import main.State;
 
-public class StartingState extends State {
+public class WorldBuildingState extends State {
     @Override
     public void setup() {
-        Main.client.changeState(new MainMenu());
+
     }
 
     @Override

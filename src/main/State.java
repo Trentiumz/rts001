@@ -29,19 +29,19 @@ public abstract class State {
     }
 
     public float mouseX() {
-        return Main.getClient().mouseX;
+        return Main.client.mouseX;
     }
 
     public float mouseY() {
-        return Main.getClient().mouseY;
+        return Main.client.mouseY;
     }
 
     public char key() {
-        return Main.getClient().key;
+        return Main.client.key;
     }
 
     public int keyCode() {
-        return Main.getClient().keyCode;
+        return Main.client.keyCode;
     }
 
 }

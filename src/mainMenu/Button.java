@@ -1,6 +1,6 @@
 package mainMenu;
 
-import main.Proxy;
+import static main.Main.client;
 
 abstract class Button {
     float x, y, w, h;
@@ -19,6 +19,6 @@ abstract class Button {
     abstract void render();
 
     protected boolean mouseOn() {
-        return x < Proxy.mouseX() && Proxy.mouseX() < x + w && y < Proxy.mouseY() && Proxy.mouseY() < y + h;
+        return x < client.mouseX && client.mouseX < x + w && y < client.mouseY && client.mouseY < y + h;
     }
 }

@@ -17,7 +17,7 @@ public class Camera {
     }
 
     void alterMatrix() {
-        Main.getClient().translate(-x, -y);
+        Main.client.translate(-x, -y);
     }
 
     float realX(float x){

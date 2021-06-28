@@ -1,6 +1,6 @@
 package mainMenu;
 
-import main.Proxy;
+import static main.Main.client;
 import main.State;
 
 public class MainMenu extends State {
@@ -8,7 +8,7 @@ public class MainMenu extends State {
 
     @Override
     public void setup() {
-        start = new TechButton(Proxy.width() / 2 - 100, Proxy.height() / 2 - 30, 200, 60, "Start", 40);
+        start = new TechButton(client.width / 2 - 100, client.height / 2 - 30, 200, 60, "Start", 40);
     }
 
     @Override

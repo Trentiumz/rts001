@@ -1,13 +1,12 @@
 package game.ingame.main.world;
 
 import game.ingame.main.world.tile.Tile;
-import main.Main;
-import main.Proxy;
 
 import java.util.HashSet;
 
-public class World {
+import static main.Main.client;
 
+public class World {
     public static final int gridSize = 50;
     Camera curCamera;
     HashSet<GameObject> objects;
@@ -26,18 +25,18 @@ public class World {
     }
 
     void render() {
-        Main.getClient().pushMatrix();
+        client.pushMatrix();
         curCamera.alterMatrix();
         for (GameObject object : objects) object.render();
-        Main.getClient().popMatrix();
+        client.popMatrix();
     }
 
     public float mouseX() {
-        return curCamera.realX(Proxy.mouseX());
+        return curCamera.realX(client.mouseX);
     }
 
     public float mouseY() {
-        return curCamera.realY(Proxy.mouseY());
+        return curCamera.realY(client.mouseY);
     }
 
     public boolean touchingGameObject(float x, float y, float w, float h) {
@@ -47,14 +46,14 @@ public class World {
         return false;
     }
 
-    public boolean touchingWall(float x, float y, float w, float h){
+    public boolean touchingWall(float x, float y, float w, float h) {
         int sx = (int) x / gridSize;
         int sy = (int) y / gridSize;
         int ex = (int) (x + w) / gridSize;
         int ey = (int) (y + h) / gridSize;
-        for(int cx = sx; cx <= ex; ++cx)
-            for(int cy = sy; cy <= ey; ++cy){
-                if(!tilemap[cx][cy].walkable) return true;
+        for (int cx = sx; cx <= ex; ++cx)
+            for (int cy = sy; cy <= ey; ++cy) {
+                if (!tilemap[cx][cy].walkable) return true;
             }
         return false;
     }

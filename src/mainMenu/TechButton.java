@@ -1,7 +1,7 @@
 package mainMenu;
 
 import main.Main;
-import main.Proxy;
+import static main.Main.client;
 import processing.core.PFont;
 import tool.Color;
 
@@ -10,11 +10,11 @@ public class TechButton extends Button {
     public static final int maxFrames = 10;
     public static final float hoveredBufferRatio = 0.15f;
 
-    static final Color background = new Color(0, 200, 255);
-    static final Color stroke = new Color(0, 0, 255);
-    static final Color textColor = new Color(0, 0, 0);
-    static final Color foreSlot = new Color(255, 0, 0);
-    static final Color line = new Color(255, 0, 0);
+    static final int background = client.color(0, 200, 255);
+    static final int stroke = client.color(0, 0, 255);
+    static final int textColor = client.color(0, 0, 0);
+    static final int foreSlot = client.color(255, 0, 0);
+    static final int line = client.color(255, 0, 0);
 
     private static PFont textFont;
     int textSize;
@@ -23,7 +23,7 @@ public class TechButton extends Button {
         super(x, y, w, h, text);
         curFrame = 0;
         if (textFont == null)
-            textFont = Proxy.loadFont("H2sa1M-48.vlw");
+            textFont = client.loadFont("H2sa1M-48.vlw");
         this.textSize = textSize;
     }
 
@@ -37,40 +37,40 @@ public class TechButton extends Button {
 
     @Override
     void render() {
-        Proxy.fill(background);
-        Proxy.stroke(stroke);
-        Proxy.strokeWeight(5);
-        Proxy.rect(x, y, w, h);
-        Proxy.textAlign(Main.CENTER, Main.CENTER);
+        client.fill(background);
+        client.stroke(stroke);
+        client.strokeWeight(5);
+        client.rect(x, y, w, h);
+        client.textAlign(Main.CENTER, Main.CENTER);
 
-        Proxy.stroke(line);
-        Proxy.strokeWeight(2);
+        client.stroke(line);
+        client.strokeWeight(2);
         float lineY = y + (float) curFrame / maxFrames * h;
-        Proxy.line(x, lineY, x + w, lineY);
+        client.line(x, lineY, x + w, lineY);
 
-        Proxy.fill(foreSlot);
-        Proxy.stroke(stroke);
-        Proxy.strokeWeight(5);
+        client.fill(foreSlot);
+        client.stroke(stroke);
+        client.strokeWeight(5);
         float bufferLength = curFrame * hoveredBufferRatio / maxFrames * w;
 
-        Proxy.beginShape();
-        Proxy.vertex(x, y);
-        Proxy.vertex(x + bufferLength, y);
-        Proxy.vertex(x + bufferLength + h / 2, y + h / 2);
-        Proxy.vertex(x + bufferLength, y + h);
-        Proxy.vertex(x, y + h);
-        Proxy.endShape();
-        Proxy.beginShape();
-        Proxy.vertex(x + w, y);
-        Proxy.vertex(x + w - bufferLength, y);
-        Proxy.vertex(x + w - bufferLength - h / 2, y + h / 2);
-        Proxy.vertex(x + w - bufferLength, y + h);
-        Proxy.vertex(x + w, y + h);
-        Proxy.endShape();
+        client.beginShape();
+        client.vertex(x, y);
+        client.vertex(x + bufferLength, y);
+        client.vertex(x + bufferLength + h / 2, y + h / 2);
+        client.vertex(x + bufferLength, y + h);
+        client.vertex(x, y + h);
+        client.endShape();
+        client.beginShape();
+        client.vertex(x + w, y);
+        client.vertex(x + w - bufferLength, y);
+        client.vertex(x + w - bufferLength - h / 2, y + h / 2);
+        client.vertex(x + w - bufferLength, y + h);
+        client.vertex(x + w, y + h);
+        client.endShape();
 
-        Proxy.textFont(textFont);
-        Proxy.textSize(textSize);
-        Proxy.fill(textColor);
-        Proxy.text(toDisplay, x + w / 2, y + h / 2);
+        client.textFont(textFont);
+        client.textSize(textSize);
+        client.fill(textColor);
+        client.text(toDisplay, x + w / 2, y + h / 2);
     }
 }
